@@ -4,7 +4,8 @@ export default {
   // siteRoot: 'http://sqrtthree.com', // Optional, but necessary for the sitemap.xml
 
   getSiteProps: () => ({
-    title: '根号三',
+    title: '根号三 Independent Developer',
+    metaDescription: 'I firmly believe that we can change the world by creating valuable, free and easy-to-use software.'
   }),
   getRoutes: async () => {
     return [

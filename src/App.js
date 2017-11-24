@@ -1,14 +1,18 @@
 import React from 'react'
-import { Router } from 'react-static'
+import { getSiteProps, Head, Router } from 'react-static'
 import Routes from 'react-static-routes'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
 import styles from './app.css'
 
-export default () => (
+export default getSiteProps(({ title, metaDescription }) => (
   <Router>
     <div>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={metaDescription} />
+      </Head>
       <Header />
       <div className="main-container">
         <Routes />
@@ -16,4 +20,4 @@ export default () => (
       <Footer />
     </div>
   </Router>
-)
+))
