@@ -3,7 +3,7 @@ import axios from 'axios'
 export default {
   // siteRoot: 'http://sqrtthree.com', // Optional, but necessary for the sitemap.xml
 
-  getSiteProps: () => ({
+  getSiteData: () => ({
     title: '根号三 Independent Developer',
     metaDescription: 'I firmly believe that we can change the world by creating valuable, free and easy-to-use software.'
   }),
@@ -12,10 +12,6 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home/index.js',
-      },
-      {
-        path: '/about',
-        component: 'src/containers/About/index.js',
       },
       {
         is404: true,

@@ -1,32 +1,37 @@
 import React from 'react'
-import { Link, withRouter } from 'react-static'
+import { Link } from 'react-static'
+import Icon from '../Icon'
 import styles from './Header.css'
 
-import logo from '../../static/logo.svg'
-
-const Header = ({ location }) => {
-  const isAboutPage = location.pathname === '/about'
-
+const Header = () => {
   return (
-    <header className="headerbar container">
-      <div className="header">
-        <div className="logo__box">
-          <Link to="/"><img className="logo" src={logo} alt="logo" /></Link>
-        </div>
-        <nav className="nav">
-          <Link className="nav__item" to="/about">About</Link>
-          <a className="nav__item" href="http://blog.sqrtthree.com/" target="_blank">Blog</a>
-        </nav>
+    <header className="headerbar">
+      <div className="headerbar__avatar d-sm-none">
+        <img src="https://avatars1.githubusercontent.com/u/8622362?s=112" alt=""/>
       </div>
-      <div className="meta">
-        <h3 className="meta__name">根号三</h3>
-        <p className="meta__description">Independent Developer</p>
-        {
-          isAboutPage ? '' : (<p className="meta__description">I firmly believe that we can change the world by creating valuable, free and easy-to-use software.</p>)
-        }
-      </div>
+      <Link className="headerbar__name" to="/">根号三</Link>
+      <nav className="headerbar__nav">
+        <a className="headerbar__nav-item" href="https://dribbble.com/sqrtthree" target="_blank">
+          <Icon type="dribbble" />
+        </a>
+        <a className="headerbar__nav-item" href="https://www.instagram.com/sqrtthree" target="_blank">
+          <Icon type="instagram" />
+        </a>
+        <a className="headerbar__nav-item" href="https://github.com/sqrthree" target="_blank">
+          <Icon type="github" />
+        </a>
+        <a className="headerbar__nav-item" href="https://twitter.com/sqrtthree" target="_blank">
+          <Icon type="twitter" />
+        </a>
+        <a className="headerbar__nav-item" href="javascript:;">
+          <Icon type="wechat" />
+        </a>
+        <a className="headerbar__nav-item" href="mailto:sqrtthree@foxmail.com">
+          <Icon type="mail" />
+        </a>
+      </nav>
     </header>
   )
 }
 
-export default withRouter(Header)
+export default Header
