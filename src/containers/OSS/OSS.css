@@ -1,0 +1,26 @@
+.project__card {
+  display: block;
+  height: 140px;
+  overflow: hidden;
+  padding: 16px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  background-color: #fff;
+  transform: translateY(0);
+  transition: transform .3s ease;
+  box-shadow: 0 0 1px 0 rgba(18,32,73,.08), 0 8px 32px 0 rgba(56,56,56,.08);
+}
+.project__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 1px 0 rgba(18,32,73,.16), 0 8px 32px 0 rgba(56,56,56,.16)
+}
+.project__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #24292e;
+}
+.project__desc {
+  font-size: 12px;
+  color: #999;
+}
