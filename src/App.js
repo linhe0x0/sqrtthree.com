@@ -14,6 +14,15 @@ const App = withSiteData(({ title, metaDescription }) => (
         <title>{title}</title>
         <meta name="description" content={metaDescription} />
         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap-grid.min.css" />
+        {/* Global site tag (gtag.js) - Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64863915-3"></script>
+        <script type="text/javascript">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-64863915-3');
+        `}</script>
       </Head>
       <Header />
       <Link className="vertical-text d-sm-block" to="/">who am i</Link>
