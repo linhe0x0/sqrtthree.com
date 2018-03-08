@@ -8,7 +8,6 @@
   background-color: #fff;
   transform: translateY(0);
   transition: transform .3s ease;
-  box-shadow: 0 0 1px 0 rgba(18,32,73,.08), 0 8px 32px 0 rgba(56,56,56,.08);
 }
 .project__card:hover {
   transform: translateY(-5px);
