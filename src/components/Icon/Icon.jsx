@@ -8,6 +8,7 @@ import instagram from '../../static/icons/instagram.svg'
 import twitter from '../../static/icons/twitter.svg'
 import wechat from '../../static/icons/wechat.svg'
 import mail from '../../static/icons/mail.svg'
+import blog from '../../static/icons/blog.svg'
 
 const iconList = {
   github,
@@ -16,6 +17,7 @@ const iconList = {
   twitter,
   wechat,
   mail,
+  blog,
 }
 
 export default ({ type }) => {

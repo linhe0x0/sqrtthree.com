@@ -26,6 +26,9 @@ const Header = () => {
         <a className="headerbar__nav-item" href="javascript:;">
           <Icon type="wechat" />
         </a>
+        <a className="headerbar__nav-item" href="https://blog.sqrtthree.com">
+          <Icon type="blog" />
+        </a>
         <a className="headerbar__nav-item" href="mailto:sqrtthree@foxmail.com">
           <Icon type="mail" />
         </a>
