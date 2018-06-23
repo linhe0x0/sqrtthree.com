@@ -103,7 +103,8 @@ li {
 }
 .main-container {
   position: relative;
-  height: 400px;
+  height: 500px;
+  overflow: auto;
   top: 50%;
   transform: translateY(-50%);
 }
