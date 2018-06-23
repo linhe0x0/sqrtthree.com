@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-static'
+
 import styles from './Home.css'
 
 export default () => (

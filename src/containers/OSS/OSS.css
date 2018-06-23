@@ -14,12 +14,32 @@
   box-shadow: 0 0 1px 0 rgba(18,32,73,.16), 0 8px 32px 0 rgba(56,56,56,.16)
 }
 .project__title {
+  width: 100%;
   margin: 0;
   font-size: 18px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #24292e;
 }
-.project__desc {
+.project__desc,
+.project__metadata {
   font-size: 12px;
+  line-height: 22px;
   color: #999;
+}
+
+.project__desc {
+  display: -webkit-box;
+  height: 44px;
+  -webkit-line-clamp: 2;
+  \-webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project__metadata span {
+  margin-left: 4px;
+  font-size: 14px;
+  vertical-align: middle;
 }
