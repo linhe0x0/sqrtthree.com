@@ -1,5 +1,6 @@
 import path from 'path'
 import axios from 'axios'
+import _ from 'lodash'
 
 export default {
   siteRoot: 'https://sqrtthree.com', // Optional, but necessary for the sitemap.xml
@@ -22,7 +23,10 @@ export default {
         const response = await axios.get(
           'https://api.github.com/users/sqrthree/repos?sort=pushed'
         )
-        const projects = response.data.filter((item) => !item.archived)
+        const projects = _.reverse(_.sortBy(
+          _.filter(response.data, (item) => !item.archived),
+          ['stargazers_count', 'pushed_at']
+        ))
 
         return {
           projects,

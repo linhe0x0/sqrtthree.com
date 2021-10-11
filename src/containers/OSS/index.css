@@ -1,3 +1,6 @@
+.oss__container {
+  padding: 24px;
+}
 .project__card {
   display: block;
   height: 140px;
@@ -7,11 +10,12 @@
   border-radius: 4px;
   background-color: #fff;
   transform: translateY(0);
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 .project__card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 1px 0 rgba(18,32,73,.16), 0 8px 32px 0 rgba(56,56,56,.16)
+  box-shadow: 0 0 1px 0 rgba(18, 32, 73, 0.16),
+    0 8px 32px 0 rgba(56, 56, 56, 0.16);
 }
 .project__title {
   width: 100%;
@@ -34,12 +38,17 @@
   display: -webkit-box;
   height: 44px;
   -webkit-line-clamp: 2;
-  \-webkit-box-orient: vertical;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
+.project__metadata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .project__metadata span {
-  margin-left: 4px;
+  margin-left: 8px;
   font-size: 14px;
   vertical-align: middle;
 }
