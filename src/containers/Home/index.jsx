@@ -24,12 +24,14 @@ export default () => (
       <div className="info">
         <h3 className="info__title">Who am i?</h3>
         <p className="info__desc">
-          Located in ZhengZhou, China, I’ve been working with coding since 2014,
-          creating valuable, free and easy-to-use{' '}
+          I'm a software engineering consultant specialized in TypeScript,
+          Node.js, GraphQL, Web Perf, Go and Cloud technologies. I’ve been
+          working with coding since 2014, creating valuable, free and
+          easy-to-use{' '}
           <Link className="info__link" to="/oss">
             software
           </Link>
-          .
+          . Located in ZhengZhou, China.
         </p>
         <p className="info__desc">
           If you want to say “hello”, just let me know and{' '}
