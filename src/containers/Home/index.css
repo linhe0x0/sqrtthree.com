@@ -14,7 +14,7 @@
   font-family: 'Bebas Neue Bold';
   font-size: 60px;
   font-weight: 300;
-  line-height: .86em;
+  line-height: 0.86em;
   letter-spacing: 1px;
   color: #1c1c1c;
 }
@@ -41,7 +41,7 @@
   .intro__title {
     margin: 35px 0 30px;
     font-size: 48px;
-    line-height: .8em;
+    line-height: 0.8em;
   }
   .intro__title::before {
     left: -14px;
@@ -52,7 +52,7 @@
   display: block;
   width: 40px;
   margin-top: 24px;
-  border-bottom: 3px solid #DD1F3A;
+  border-bottom: 3px solid #dd1f3a;
 }
 .intro__work {
   font-size: 12px;
@@ -82,7 +82,7 @@
   width: 80px;
   height: 24px;
   content: '';
-  background-color: #FFD965;
+  background-color: #ffd965;
 }
 .info__desc {
   display: inline-block;
