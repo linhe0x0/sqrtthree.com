@@ -22,7 +22,8 @@ const iconList = {
   star,
 }
 
-export default ({ type }) => {
+export default function Icon(props) {
+  const { type } = props
   const icon = iconList[type]
 
   if (!icon) return null

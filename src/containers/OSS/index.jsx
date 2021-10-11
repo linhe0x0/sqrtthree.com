@@ -10,7 +10,12 @@ export default withRouteData(({ projects }) => (
     <div className="row">
       {projects.map((item) => (
         <div className="col-lg-3 col-sm-6" key={item.name}>
-          <a className="project__card" href={item.html_url} target="_blank">
+          <a
+            className="project__card"
+            href={item.html_url}
+            target="_blank"
+            rel="noreferrer"
+          >
             <h2 className="project__title">{item.name}</h2>
             <p className="project__desc">{item.description}</p>
             <div className="project__metadata">

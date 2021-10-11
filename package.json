@@ -4,7 +4,8 @@
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "lint": "eslint --ext js,jsx ./src"
   },
   "dependencies": {
     "@reach/router": "^1.3.4",

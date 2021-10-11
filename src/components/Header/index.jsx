@@ -21,6 +21,7 @@ export default function Header() {
           className="headerbar__nav-item"
           href="https://dribbble.com/sqrtthree"
           target="_blank"
+          rel="noreferrer"
         >
           <Icon type="dribbble" />
         </a>
@@ -28,6 +29,7 @@ export default function Header() {
           className="headerbar__nav-item"
           href="https://www.instagram.com/sqrtthree"
           target="_blank"
+          rel="noreferrer"
         >
           <Icon type="instagram" />
         </a>
@@ -35,6 +37,7 @@ export default function Header() {
           className="headerbar__nav-item"
           href="https://github.com/sqrthree"
           target="_blank"
+          rel="noreferrer"
         >
           <Icon type="github" />
         </a>
@@ -42,6 +45,7 @@ export default function Header() {
           className="headerbar__nav-item"
           href="https://twitter.com/sqrtthree"
           target="_blank"
+          rel="noreferrer"
         >
           <Icon type="twitter" />
         </a>
