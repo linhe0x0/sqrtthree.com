@@ -6,16 +6,16 @@ http://sqrtthree.com/
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:3000
-npm run start
+yarn run start
 
 # build for production with minification
-npm run build
+yarn run build
 
 # start the production server
-npm run serve
+yarn run serve
 ```
 
 ---
