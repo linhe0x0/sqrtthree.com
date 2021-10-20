@@ -4,6 +4,7 @@ import _ from 'lodash'
 
 export default {
   siteRoot: 'https://sqrtthree.com', // Optional, but necessary for the sitemap.xml
+  stagingSiteRoot: '',
 
   getSiteData: () => ({
     title: '根号三, INDEPENDENT WEB DEVELOPER',
