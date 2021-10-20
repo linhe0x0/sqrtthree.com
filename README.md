@@ -1,6 +1,6 @@
 # sqrtthree.com
 
-http://sqrtthree.com/
+https://sqrtthree.com/
 
 ## Build Setup
 
