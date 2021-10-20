@@ -3,7 +3,7 @@ import axios from 'axios'
 import _ from 'lodash'
 
 export default {
-  siteRoot: 'https://sqrtthree.com', // Optional, but necessary for the sitemap.xml
+  siteRoot: 'https://www.sqrtthree.com', // Optional, but necessary for the sitemap.xml
   stagingSiteRoot: '',
 
   getSiteData: () => ({
